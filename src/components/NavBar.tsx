@@ -8,7 +8,7 @@ import Button from './ui/button'
 
 const NavBar = () => {
     return (
-        <div className='fixed top-0 w-full m-0 p-2 flex h-[70px] px-10 items-center justify-between'>
+        <div className='fixed z-50 top-0 w-full m-0 p-2 flex h-[70px] px-10 items-center justify-between bg-white'>
             <Image alt='logo' src={"/CM-logo.png"} width={50} height={50} className='h-full w-auto' />
             <ul className='flex items-center gap-6 h-full justify-center'>
                 <Nav to='/'>Home</Nav>
@@ -18,8 +18,8 @@ const NavBar = () => {
 
             </ul>
             <div className='flex gap-5'>
-                <Button varient='outline'>Login</Button>
-                <Button>Sign Up</Button>
+                <Button className='py-2' varient='outline'>Login</Button>
+                <Button className='py-2'>Sign Up</Button>
             </div>
         </div>
     )

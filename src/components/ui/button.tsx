@@ -5,14 +5,14 @@ export interface ButtonProps
     varient?: 'default' | 'outline'
 }
 
-const Button = ({ className, varient, children, ...props }: ButtonProps) => {
+const Button = ({ className, varient, children, disabled, ...props }: ButtonProps) => {
     const varients = {
         default: "hover:bg-transparent border border-primary hover:text-primary border",
         outline: "hover:bg-primary hover:text-white bg-transparent text-primary border"
     }
 
     return (
-        <button className={twMerge("transition-colors duration-150 bg-primary text-primary-foreground hover:opacity-90 p-2 text-sm rounded-md px-4 cursor-pointer", varients[varient ?? 'default'], className)} {...props}>{children}</button>
+        <button className={twMerge("transition-colors duration-150 bg-primary text-primary-foreground hover:opacity-90 p-4 text-sm rounded-lg py-3 font-semibold cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed", varients[varient ?? 'default'], className)} disabled={disabled ?? false} {...props}>{children}</button>
     )
 }
 
