@@ -1,7 +1,7 @@
 "use client"
-import { ArrowLeft, ArrowRight, Circle, SquareArrowDownLeft, SquareArrowDownRight, UserRound } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Circle, UserRound } from 'lucide-react';
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import { twMerge } from 'tailwind-merge'
 import Button from '../ui/button'
 import RatingStar from '../ui/rating'

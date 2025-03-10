@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 import AgeIcon from '../icons/AgeIcon'
 import DesktopLiveIcon from '../icons/DesktopLive'
 import PolygonBackground from '../icons/Polygon'

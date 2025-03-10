@@ -1,8 +1,8 @@
 "use client";
 import Image from 'next/image'
 import Link from 'next/link'
-import { useParams, usePathname } from 'next/navigation'
-import React, { type ReactNode } from 'react'
+import { usePathname } from 'next/navigation';
+import type { ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge'
 import Button from './ui/button'
 

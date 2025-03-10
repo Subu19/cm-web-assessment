@@ -1,4 +1,4 @@
-import React, { type ReactNode } from 'react'
+import type { ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge'
 
 const Wrapper = ({ children, className }: { children: ReactNode, className?: string }) => {
