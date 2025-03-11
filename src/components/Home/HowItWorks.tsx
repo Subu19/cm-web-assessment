@@ -13,21 +13,21 @@ const HowItWorks = () => {
                 </h1>
                 <div className="text-primary-text flex flex-col gap-5">
                     <div className='flex p-4 items-center gap-5 small-drop-shadow rounded-2xl'>
-                        <Button className='rounded-full bg-[#5488f2] h-14 w-14 flex items-center justify-center'><List /></Button>
+                        <Button className='rounded-full border-none bg-[#5488f2] h-14 w-14 flex items-center justify-center'><List /></Button>
                         <div className='flex flex-col gap-1 text-primary-text'>
                             <h1 className='font-semibold'>Register</h1>
                             <p className='text-sm' >Click on the Enroll button and complete your registration form.</p>
                         </div>
                     </div>
                     <div className='flex p-4 items-center gap-5 small-drop-shadow rounded-2xl'>
-                        <Button className='rounded-full bg-[#5488f2] h-14 w-14 flex items-center justify-center'><Calendar /></Button>
+                        <Button className='rounded-full border-none bg-[#5488f2] h-14 w-14 flex items-center justify-center'><Calendar /></Button>
                         <div className='flex flex-col gap-1 text-primary-text'>
                             <h1 className='font-semibold'>Choose your course</h1>
                             <p className='text-sm'>Choose the best course for you.</p>
                         </div>
                     </div>
                     <div className='flex p-4 items-center gap-5 small-drop-shadow rounded-2xl'>
-                        <Button className='rounded-full bg-[#5488f2] h-14 w-14 flex items-center justify-center'><Laptop /></Button>
+                        <Button className='rounded-full border-none bg-[#5488f2] h-14 w-14 flex items-center justify-center'><Laptop /></Button>
                         <div className='flex flex-col gap-1 text-primary-text'>
                             <h1 className='font-semibold'>Start Learning</h1>
                             <p className='text-sm' >You’re on the way to become a professional personal.</p>

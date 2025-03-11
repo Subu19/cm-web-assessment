@@ -20,8 +20,8 @@ const NavBar = () => {
                 <Nav to='/careers'>Careers</Nav>
             </ul>
             <div className='md:flex hidden gap-5'>
-                <Button className='py-2' varient='outline'>Login</Button>
-                <Button className='py-2'>Sign Up</Button>
+                <Button className='py-2 rounded-lg' varient='outline'>Login</Button>
+                <Button className='py-2 rounded-lg'>Sign Up</Button>
             </div>
             <div className='flex md:hidden items-center justify-center'>
                 <Menu size={36} onClick={(open) => setMobileNavOpen(true)} />
