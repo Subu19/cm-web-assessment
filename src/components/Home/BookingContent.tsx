@@ -5,7 +5,7 @@ import Wrapper from '../ui/wrapper'
 
 const BookingContent = () => {
     return (
-        <Wrapper className="flex gap-10 pt-20">
+        <Wrapper className="flex gap-10 pt-20 lg:flex-row md:flex-row flex-col">
             <div className="flex-1 flex flex-col gap-5 justify-center">
                 <h1 className="text-3xl font-semibold">
                     Purchase Your Lessons & Learn <br />
@@ -16,7 +16,7 @@ const BookingContent = () => {
                 </p>
                 <Button className="w-fit">Book Your Lessons</Button>
             </div>
-            <div className="flex-1"><Image src={"/BookYourLessionImage.png"} height={500} width={500} className="w-full h-full" alt="Book Your Lession Image" /></div>
+            <div className="flex-1 flex md:justify-end justify-center"><Image src={"/BookYourLessionImage.png"} height={500} width={500} className="w-auto md:w-full h-full" alt="Book Your Lession Image" /></div>
         </Wrapper>
     )
 }
