@@ -20,6 +20,9 @@
 .big-drop-shadow {
 	box-shadow: rgba(0, 59, 1179, 0.14) 0px 10px 36px 0px;
 }
+.small-drop-shadow {
+	box-shadow: rgba(0, 59, 1179, 0.14) 0px 4px 4px 0px;
+}
 
 body {
 	background: var(--background);

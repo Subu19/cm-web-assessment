@@ -8,7 +8,7 @@ import Button from './ui/button'
 
 const NavBar = () => {
     return (
-        <div className='fixed z-50 top-0 w-full m-0 p-2 flex h-[70px] px-10 items-center justify-between bg-white'>
+        <div className='fixed drop-shadow-sm z-50 top-0 w-full m-0 p-2 flex h-[70px] px-10 items-center justify-between bg-white'>
             <Image alt='logo' src={"/CM-logo.png"} width={50} height={50} className='h-full w-auto' />
             <ul className='flex items-center gap-6 h-full justify-center'>
                 <Nav to='/'>Home</Nav>
