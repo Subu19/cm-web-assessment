@@ -6,7 +6,7 @@ import Wrapper from '../ui/wrapper'
 
 const HowItWorks = () => {
     return (
-        <Wrapper className="flex gap-10 pt-20">
+        <Wrapper className="flex gap-10 pt-20 md:flex-row flex-col">
             <div className="flex-1 flex flex-col gap-5 justify-center">
                 <h1 className="text-3xl font-semibold">
                     Here's How It <span className='text-primary'> Works!</span>
@@ -35,7 +35,7 @@ const HowItWorks = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex-1 flex items-center justify-center"><Image src={"/HowItWorksImage.png"} height={500} width={500} className="w-full h-full max-h-[400px] object-contain" alt="How it works image" /></div>
+            <div className="flex-1 flex items-center justify-center"><Image src={"/HowItWorksImage.png"} height={500} width={500} className="w-full h-full max-w-[80%] md:max-w-full md:max-h-[400px] object-contain" alt="How it works image" /></div>
         </Wrapper>
     )
 }
