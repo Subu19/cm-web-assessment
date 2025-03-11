@@ -16,21 +16,21 @@ const HowItWorks = () => {
                         <Button className='rounded-full bg-[#5488f2] h-14 w-14 flex items-center justify-center'><Calendar /></Button>
                         <div className='flex flex-col gap-1 text-primary-text'>
                             <h1 className='font-semibold'>Register</h1>
-                            <p >Click on the Enroll button and complete your registration form.</p>
+                            <p className='text-sm' >Click on the Enroll button and complete your registration form.</p>
                         </div>
                     </div>
                     <div className='flex p-4 items-center gap-5 small-drop-shadow rounded-2xl'>
                         <Button className='rounded-full bg-[#5488f2] h-14 w-14 flex items-center justify-center'><Calendar /></Button>
                         <div className='flex flex-col gap-1 text-primary-text'>
                             <h1 className='font-semibold'>Choose your course</h1>
-                            <p >Choose the best course for you.</p>
+                            <p className='text-sm'>Choose the best course for you.</p>
                         </div>
                     </div>
                     <div className='flex p-4 items-center gap-5 small-drop-shadow rounded-2xl'>
                         <Button className='rounded-full bg-[#5488f2] h-14 w-14 flex items-center justify-center'><Calendar /></Button>
                         <div className='flex flex-col gap-1 text-primary-text'>
                             <h1 className='font-semibold'>Start Learning</h1>
-                            <p >You’re on the way to become a professional personal.</p>
+                            <p className='text-sm' >You’re on the way to become a professional personal.</p>
                         </div>
                     </div>
                 </div>

@@ -6,6 +6,7 @@ import HeroContent from "@/components/Home/HeroContent";
 import HowItWorks from "@/components/Home/HowItWorks";
 import LearningContent from "@/components/Home/LearningContent";
 import TechStackLoop from "@/components/Home/TechStackLoop";
+import Testimonial from "@/components/Home/Testimonial";
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <CheckListContent />
       <HowItWorks />
       <LearningContent />
+      <Testimonial />
     </>
   );
 }
