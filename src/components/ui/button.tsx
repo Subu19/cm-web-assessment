@@ -12,7 +12,7 @@ const Button = ({ className, varient, children, disabled, ...props }: ButtonProp
     }
 
     return (
-        <button className={twMerge("transition-colors duration-150 bg-primary text-primary-foreground hover:opacity-90 p-4 text-sm rounded-lg py-3 font-semibold cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed", varients[varient ?? 'default'], className)} disabled={disabled ?? false} {...props}>{children}</button>
+        <button className={twMerge("transition-colors duration-150 bg-primary text-primary-foreground hover:opacity-90 p-4 text-sm rounded-2xl py-3 font-semibold cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed", varients[varient ?? 'default'], className)} disabled={disabled ?? false} {...props}>{children}</button>
     )
 }
 
