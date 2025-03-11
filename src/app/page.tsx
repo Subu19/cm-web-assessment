@@ -2,6 +2,7 @@
 import BookingContent from "@/components/Home/BookingContent";
 import CheckListContent from "@/components/Home/CheckListContent";
 import CoursesContent from "@/components/Home/CoursesContent";
+import FAQcontent from "@/components/Home/FAQcontent";
 import HeroContent from "@/components/Home/HeroContent";
 import HowItWorks from "@/components/Home/HowItWorks";
 import LearningContent from "@/components/Home/LearningContent";
@@ -23,6 +24,7 @@ export default function Home() {
       <HowItWorks />
       <LearningContent />
       <Testimonial />
+      <FAQcontent />
     </>
   );
 }
