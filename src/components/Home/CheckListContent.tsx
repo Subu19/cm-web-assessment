@@ -25,7 +25,7 @@ const checklist = [
 const CheckListContent = () => {
     return (
         <Wrapper className="flex gap-10 pt-20">
-            <div className="flex-1"><Image src={"/WhatWillYouGetImage.png"} height={500} width={500} className="w-full h-full object-contain max-h-[500px]" alt="Book Your Lession Image" /></div>
+            <div className="flex-1 hidden md:block"><Image src={"/WhatWillYouGetImage.png"} height={500} width={500} className="w-full h-full object-contain max-h-[500px]" alt="Book Your Lession Image" /></div>
             <div className="flex-1 flex flex-col gap-5">
                 <h1 className="text-3xl font-semibold">
                     What Will You <span className="text-primary">Get?</span>
