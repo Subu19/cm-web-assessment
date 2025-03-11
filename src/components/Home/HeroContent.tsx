@@ -19,7 +19,7 @@ const HeroContent = () => {
                 <PolygonBackground className="absolute top-2 left-2 scale-75 rotate-[-5deg]" />
 
                 {/* /// hero content  */}
-                <div className=" flex-1 justify-center flex flex-col w-full gap-5">
+                <div className=" flex-1 justify-center flex flex-col w-full gap-5 z-10">
                     <h1 className=" lg:text-4xl md:text-3xl text-3xl text-center md:text-start font-bold text-black">Empowering Young Minds <br /> with <strong className="text-primary">Future-Ready Skills!</strong></h1>
                     <p className="text-[#6C6C6C] text-center md:text-start">Join us in shaping the leaders of tomorrow through innovative <br /> learning experiences.</p>
                     <div className="flex text-[#6C6C6C] gap-10 text-sm justify-center md:justify-start">
@@ -33,7 +33,7 @@ const HeroContent = () => {
                 </div>
                 {/* //hero image  */}
                 <div className="flex-1 flex items-end justify-center">
-                    <Image alt="hero-banner" src={"/Hero-banner.png"} width={1000} height={1000} className="object-contain md:max-h-[100%] w-auto md:w-full" />
+                    <Image alt="hero-banner" src={"/Hero-banner.png"} width={1000} height={1000} className="z-10 object-contain md:max-h-[100%] w-auto md:w-full" />
                 </div>
             </Wrapper>
         </div>
