@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "motion/react"
 import Image from 'next/image'
 import AgeIcon from '../icons/AgeIcon'
 import DesktopLiveIcon from '../icons/DesktopLive'
@@ -5,7 +7,6 @@ import PolygonBackground from '../icons/Polygon'
 import StarBackground from '../icons/StarBackground'
 import Button from '../ui/button'
 import Wrapper from '../ui/wrapper'
-
 const HeroContent = () => {
     return (
         <div className=" w-full md:h-[80vh] h-auto p-10 pb-0 relative">
@@ -20,16 +21,16 @@ const HeroContent = () => {
 
                 {/* /// hero content  */}
                 <div className=" flex-1 justify-center flex flex-col w-full gap-5 z-10">
-                    <h1 className=" lg:text-4xl md:text-3xl text-3xl text-center md:text-start font-bold text-black">Empowering Young Minds <br /> with <strong className="text-primary">Future-Ready Skills!</strong></h1>
-                    <p className="text-[#6C6C6C] text-center md:text-start">Join us in shaping the leaders of tomorrow through innovative <br /> learning experiences.</p>
-                    <div className="flex text-[#6C6C6C] gap-10 text-sm justify-center md:justify-start">
+                    <motion.h1 animate={{ translateY: 0, opacity: 1 }} transition={{ duration: 1, ease: "backOut" }} initial={{ opacity: 0, translateY: 50 }} className=" lg:text-4xl md:text-3xl text-3xl text-center md:text-start font-bold text-black">Empowering Young Minds <br /> with <strong className="text-primary">Future-Ready Skills!</strong></motion.h1>
+                    <motion.p animate={{ translateY: 0, opacity: 1 }} transition={{ delay: 0.05, duration: 1, ease: "backOut" }} initial={{ opacity: 0, translateY: 50 }} className="text-[#6C6C6C] text-center md:text-start">Join us in shaping the leaders of tomorrow through innovative <br /> learning experiences.</motion.p>
+                    <motion.div animate={{ translateY: 0, opacity: 1 }} transition={{ delay: 0.1, duration: 1, ease: "backOut" }} initial={{ opacity: 0, translateY: 50 }} className="flex text-[#6C6C6C] gap-10 text-sm justify-center md:justify-start">
                         <span className="flex gap-2 items-center"><DesktopLiveIcon /> Live 1:1 Classes</span>
                         <span className="flex gap-2 items-center"><AgeIcon /> For Ages 5-17</span>
-                    </div>
-                    <div className="flex gap-5 justify-center md:justify-start">
+                    </motion.div>
+                    <motion.div animate={{ translateY: 0, opacity: 1 }} transition={{ delay: 0.15, duration: 1, ease: "backOut" }} initial={{ opacity: 0, translateY: 50 }} className="flex gap-5 justify-center md:justify-start">
                         <Button >Start Learning Now</Button>
                         <Button varient="outline">Talk to the Advisor</Button>
-                    </div>
+                    </motion.div>
                 </div>
                 {/* //hero image  */}
                 <div className="flex-1 flex items-end justify-center">

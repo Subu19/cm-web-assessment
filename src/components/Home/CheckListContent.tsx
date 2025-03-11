@@ -1,8 +1,9 @@
+"use client"
 import { Check } from 'lucide-react'
+import { motion } from "motion/react"
 import Image from 'next/image'
 import React from 'react'
 import Wrapper from '../ui/wrapper'
-
 const checklist = [
     {
         name: "Project-based Learning",
@@ -27,9 +28,9 @@ const CheckListContent = () => {
         <Wrapper className="flex gap-10 pt-20">
             <div className="flex-1 hidden md:block"><Image src={"/WhatWillYouGetImage.png"} height={500} width={500} className="w-full h-full object-contain max-h-[500px]" alt="Book Your Lession Image" /></div>
             <div className="flex-1 flex flex-col gap-5">
-                <h1 className="text-3xl font-semibold">
+                <motion.h1 initial={{ opacity: 0, translateY: 50 }} viewport={{ once: true, margin: "-120px" }} transition={{ duration: 1, ease: "backOut" }} whileInView={{ opacity: 1, translateY: 0 }} className="text-3xl font-semibold">
                     What Will You <span className="text-primary">Get?</span>
-                </h1>
+                </motion.h1>
                 <div className="text-primary-text flex flex-col gap-5">
                     {checklist.map((checklist) => {
                         return <CheckList desc={checklist.desc} name={checklist.name} key={checklist.name} />
@@ -40,13 +41,13 @@ const CheckListContent = () => {
     )
 }
 const CheckList = (checklist: { name: string, desc: string }) => {
-    return <div className="bg-white big-drop-shadow rounded-2xl p-5 flex gap-5">
+    return <motion.div initial={{ opacity: 0, translateY: 50 }} viewport={{ once: true, margin: "-120px" }} transition={{ duration: 1, ease: "backOut" }} whileInView={{ opacity: 1, translateY: 0 }} className="bg-white big-drop-shadow rounded-2xl p-5 flex gap-5">
         <CheckBox />
         <div className="flex flex-col gap-2">
             <h1 className=" font-semibold text-primary-text">{checklist.name}</h1>
             <p className="text-sm text-primary-text">{checklist.desc}</p>
         </div>
-    </div>
+    </motion.div>
 }
 
 

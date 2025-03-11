@@ -1,12 +1,12 @@
 "use client"
 import { ArrowLeft, ArrowRight, Circle, UserRound } from 'lucide-react';
+import { motion } from "motion/react"
 import Image from 'next/image'
 import { useEffect, useState } from 'react';
 import { twMerge } from 'tailwind-merge'
 import Button from '../ui/button'
 import RatingStar from '../ui/rating'
 import Wrapper from '../ui/wrapper'
-
 const courses = [
     {
         "title": "Future Innovators",
@@ -133,7 +133,7 @@ const CoursesContent = () => {
 
                     </div>
                     {/* cards render         */}
-                    <div className="grid lg:grid-cols-12 md:grid-cols-8 gap-10 sm:grid-cols-8 overflow-x-auto">
+                    <div className="grid lg:grid-cols-12 md:grid-cols-8 gap-10 sm:grid-cols-8 overflow-x-auto overflow-y-hidden">
                         {activeCards.map(course => (
                             <CourseCard course={course} key={course.title} />
                         ))}
@@ -158,7 +158,7 @@ interface Course {
 
 const CourseCard = ({ course }: { course: Course }) => {
     return (
-        <div className="lg:col-span-4 md:col-span-4 sm:col-span-8 p-5 bg-[rgba(255,255,255,0.3)] rounded-3xl">
+        <motion.div initial={{ opacity: 0, translateY: 30 }} animate={{ translateY: 0, opacity: 1 }} transition={{ duration: 0.5 }} className="lg:col-span-4 md:col-span-4 sm:col-span-8 p-5 bg-[rgba(255,255,255,0.3)] rounded-3xl">
             <Image alt='CourseImage' src={course.image} width={200} height={200} className='w-full object-cover aspect-square rounded-3xl mb-2 max-h-[250px]' />
             <div className='font-semibold text-lg'>{course.title}</div>
             <div className='flex gap-1 items-center'><UserRound className='text-primary-text' size={16} /> <span className='text-primary'>{course.age_group}</span></div>
@@ -167,7 +167,7 @@ const CourseCard = ({ course }: { course: Course }) => {
             <div className='flex gap-2 text-primary-text items-center text-sm'>
                 <RatingStar rating={course.rating} />({course.reviews})
             </div>
-        </div>
+        </motion.div>
     )
 }
 

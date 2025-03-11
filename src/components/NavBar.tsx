@@ -9,9 +9,9 @@ import { twMerge } from 'tailwind-merge'
 import Button from './ui/button'
 
 const NavBar = () => {
-    const [mobileNavOpen, setMobileNavOpen] = useState(true);
+    const [mobileNavOpen, setMobileNavOpen] = useState(false);
     return (
-        <div className='fixed drop-shadow-sm z-50 top-0 w-full m-0 p-2 flex h-[70px] px-10 items-center justify-between bg-white'>
+        <div className='fixed drop-shadow-sm z-50 top-0 w-full m-0 p-2 flex h-[70px] px-10 items-center justify-between bg-white text-black transition-all'>
             <Image alt='logo' src={"/CM-logo.png"} width={100} height={70} className='h-full w-auto' />
             <ul className='md:flex hidden items-center gap-6 h-full justify-center'>
                 <Nav to='/'>Home</Nav>
