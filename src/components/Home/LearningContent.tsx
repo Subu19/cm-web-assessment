@@ -11,7 +11,7 @@ const LearningContent = () => {
                     <h1 className='font-semibold text-2xl z-10'>Ready to Shape the Future of Tech?</h1>
                     <p className='z-10 text-sm'>Be part of an innovative journey, collaborate with industry experts, and make a real impact.</p>
 
-                    <Button className='bg-white w-fit text-primary-text rounded-2xl hover:bg-white '>Start Learning
+                    <Button className='bg-white w-fit text-primary-text hover:text-primary-text hover:opacity-100 rounded-2xl hover:bg-white '>Start Learning
                         <Image alt='' src={'/LearningPathImage.svg'} width={300} height={300} className='absolute top-5 rotate-[4deg] left-40 w-[70%] -z-0' />
                     </Button>
                 </div>

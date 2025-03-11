@@ -110,7 +110,7 @@ const CoursesContent = () => {
     const goToNextPage = () => setCurrentPage(prev => Math.min(totalPages, prev + 1));
 
     return (
-        <div className='bg-[#e5effc]'>
+        <div className='bg-[#e5effc] pb-10'>
             <Wrapper className='relative'>
                 <h1 className='text-center text-3xl font-semibold my-5'>Courses We Provide</h1>
 

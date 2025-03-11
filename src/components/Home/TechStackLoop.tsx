@@ -29,7 +29,9 @@ const TechStackLoop = () => {
     return (
         <div className="w-full py-10" >
             <Marquee pauseOnHover>
-                {techStackItems.map((item) => <TechStackItem key={item.name} name={item.name} path={item.path} />)}
+                {Array.from({ length: 2 }, (_, i) => {
+                    return techStackItems.map((item) => <TechStackItem key={item.name} name={item.name} path={item.path} />)
+                })}
             </Marquee>
         </div>
     )
