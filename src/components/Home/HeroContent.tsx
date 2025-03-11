@@ -9,7 +9,7 @@ import Button from '../ui/button'
 import Wrapper from '../ui/wrapper'
 const HeroContent = () => {
     return (
-        <div className=" w-full md:h-[80vh] h-auto p-10 pb-0 relative">
+        <div className=" w-full md:h-[80vh] h-auto p-3 pt-10 md:p-10 pb-0 md:pb-0 relative">
             <Image alt="backgroundImage" src={"/Background.png"} height={730} width={1440} className="absolute h-full w-full top-0 left-0 -z-10 object-cover" />
             <Wrapper className="relative rounded-3xl rounded-b-none bg-gradient-to-r md:pt-0 pt-24 from-[rgba(202,221,253,1)] to-[rgba(255,255,255,0.5)] flex md:flex-row flex-col md:gap-2 gap-16 pb-0">
 
@@ -21,7 +21,7 @@ const HeroContent = () => {
 
                 {/* /// hero content  */}
                 <div className=" flex-1 justify-center flex flex-col w-full gap-5 z-10">
-                    <motion.h1 animate={{ translateY: 0, opacity: 1 }} transition={{ duration: 1, ease: "backOut" }} initial={{ opacity: 0, translateY: 50 }} className=" lg:text-4xl md:text-3xl text-3xl text-center md:text-start font-bold text-black">Empowering Young Minds <br /> with <strong className="text-primary">Future-Ready Skills!</strong></motion.h1>
+                    <motion.h1 animate={{ translateY: 0, opacity: 1 }} transition={{ duration: 1, ease: "backOut" }} initial={{ opacity: 0, translateY: 50 }} className=" lg:text-4xl md:text-3xl text-3xl text-center md:text-start font-bold text-black">Empowering Young Minds with <br /> <strong className="text-primary">Future-Ready Skills!</strong></motion.h1>
                     <motion.p animate={{ translateY: 0, opacity: 1 }} transition={{ delay: 0.05, duration: 1, ease: "backOut" }} initial={{ opacity: 0, translateY: 50 }} className="text-[#6C6C6C] text-center md:text-start">Join us in shaping the leaders of tomorrow through innovative <br /> learning experiences.</motion.p>
                     <motion.div animate={{ translateY: 0, opacity: 1 }} transition={{ delay: 0.1, duration: 1, ease: "backOut" }} initial={{ opacity: 0, translateY: 50 }} className="flex text-[#6C6C6C] gap-10 text-sm justify-center md:justify-start">
                         <span className="flex gap-2 items-center"><DesktopLiveIcon /> Live 1:1 Classes</span>

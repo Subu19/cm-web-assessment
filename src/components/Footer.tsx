@@ -8,10 +8,10 @@ const Footer = () => {
     return (
         <div className='bg-[#e3e3e3] text-primary-text mt-10'>
             <Wrapper className='flex flex-col py-16'>
-                <div className='flex'>
+                <div className='flex md:flex-row flex-col gap-10 md:gap-0'>
                     <div className='flex-1'>
-                        <h1 className='text-xl font-semibold text-primary-text mb-5'>Get in touch</h1>
-                        <div className='flex flex-col gap-5'>
+                        <h1 className='text-xl font-semibold text-black mb-5'>Get in touch</h1>
+                        <div className='flex flex-row flex-wrap md:flex-nowrap gap-5 md:flex-col'>
                             <div>
                                 <h3 >E-mail</h3>
                                 <h3 className='font-semibold'>info@cademantra.io</h3>
@@ -27,8 +27,8 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='flex-1'>
-                        <h1 className='text-xl font-semibold text-primary-text mb-5'>Company</h1>
-                        <div className='flex flex-col gap-4'>
+                        <h1 className='text-xl font-semibold text-black mb-5'>Company</h1>
+                        <div className='flex gap-4 flex-row flex-wrap md:flex-nowrap md:flex-col'>
                             <h3 className='font-semibold'>Home</h3>
                             <h3 className='font-semibold'>About Us</h3>
                             <h3 className='font-semibold'>Courses</h3>
@@ -37,9 +37,9 @@ const Footer = () => {
                             <h3 className='font-semibold'>Blogs</h3>
                         </div>
                     </div>
-                    <div className='flex-1'>
-                        <h1 className='text-xl font-semibold text-primary-text mb-5'>Courses we provide?</h1>
-                        <div className='flex flex-col gap-4'>
+                    <div className='flex-1 md:w-auto'>
+                        <h1 className='text-xl font-semibold text-black mb-5'>Courses we provide?</h1>
+                        <div className='flex  gap-4 flex-row flex-wrap md:flex-nowrap md:flex-col'>
                             <h3 className='font-semibold'>Scratch </h3>
                             <h3 className='font-semibold'>Web Development</h3>
                             <h3 className='font-semibold'>Python</h3>
@@ -51,8 +51,8 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-between items-center mt-10'>
-                    <div className='font-semibold'>
+                <div className='flex justify-between items-center mt-10 md:flex-row flex-col-reverse gap-10 md:gap-0'>
+                    <div className='font-semibold text-black'>
                         &copy; CodeMantra 2025 - All rights reserved.
                     </div>
                     <div className='flex gap-4'>

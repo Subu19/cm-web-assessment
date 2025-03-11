@@ -29,7 +29,9 @@
 .navbar-slide-up {
 	animation: slideup 0.5s ease 0s 1 normal forwards;
 }
-
+.navbar-slide-down {
+	animation: slidedown 0.5s ease 0s 1 normal forwards;
+}
 @keyframes slideup {
 	0% {
 		opacity: 0;
@@ -41,7 +43,17 @@
 		transform: translateY(0);
 	}
 }
+@keyframes slidedown {
+	0% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
 
+	100% {
+		opacity: 0;
+		transform: translateY(500px);
+	}
+}
 body {
 	background: var(--background);
 	color: var(--foreground);
