@@ -8,7 +8,6 @@ import HowItWorks from "@/components/Home/HowItWorks";
 import LearningContent from "@/components/Home/LearningContent";
 import TechStackLoop from "@/components/Home/TechStackLoop";
 import Testimonial from "@/components/Home/Testimonial";
-import { useEffect } from "react";
 
 export default function Home() {
 

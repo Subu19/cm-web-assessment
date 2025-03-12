@@ -11,7 +11,7 @@ const HowItWorks = () => {
         <Wrapper className="flex gap-10 pt-20 md:flex-row flex-col">
             <div className="flex-1 flex flex-col gap-5 justify-center">
                 <motion.h1 initial={{ opacity: 0, translateX: -50 }} viewport={{ once: true, margin: "-120px" }} transition={{ duration: 1, ease: "backOut" }} whileInView={{ opacity: 1, translateX: 0 }} className="text-3xl font-semibold">
-                    Here's How It <span className='text-primary'> Works!</span>
+                    {"Here's"} How It <span className='text-primary'> Works!</span>
                 </motion.h1>
                 <div className="text-primary-text flex flex-col gap-5">
                     <motion.div initial={{ opacity: 0, translateX: -50 }} viewport={{ once: true, margin: "-120px" }} transition={{ duration: 1, ease: "backOut" }} whileInView={{ opacity: 1, translateX: 0 }} className='flex p-4 items-center gap-5 small-drop-shadow rounded-2xl'>

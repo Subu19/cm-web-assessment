@@ -13,7 +13,7 @@ const BookingContent = () => {
                     from the Best!
                 </motion.h1>
                 <motion.p initial={{ opacity: 0, translateX: -100 }} viewport={{ once: true, margin: "-100px" }} transition={{ delay: 0.2, duration: 1, ease: "backOut" }} whileInView={{ opacity: 1, translateX: 0 }} className="text-primary-text">
-                    Join our interactive courses and get hands-on experience with top industry professionals. Whether you're a beginner or an advanced learner, we have the perfect lesson for you.
+                    Join our interactive courses and get hands-on experience with top industry professionals. Whether {"you're"} a beginner or an advanced learner, we have the perfect lesson for you.
                 </motion.p>
                 <motion.div initial={{ opacity: 0, translateX: -100 }} viewport={{ once: true, margin: "-100px" }} transition={{ delay: 0.3, duration: 1, ease: "backOut" }} whileInView={{ opacity: 1, translateX: 0 }} >
                     <Button className="w-fit">Book Your Lessons</Button>

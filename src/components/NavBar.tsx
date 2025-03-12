@@ -1,10 +1,9 @@
-"use client";
+"use client";;
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 import { type ReactNode, useRef, useState } from 'react';
-import { FaHamburger } from 'react-icons/fa';
 import { twMerge } from 'tailwind-merge'
 import Button from './ui/button'
 
@@ -50,7 +49,7 @@ const NavBar = () => {
                         <hr className='my-10 text-gray-400' />
                         <div className='md:hidden flex gap-3 items-center flex-col'>
                             <Button className='py-2 w-fit text-xl px-10' varient='outline'>Login</Button>
-                            <div>Don't have an account?</div>
+                            <div>Don&apos;t have an account?</div>
                             <div className='text-primary underline'>Sign up now!</div>
                         </div>
                     </div>
